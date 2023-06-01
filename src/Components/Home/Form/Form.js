@@ -1,5 +1,6 @@
-import React from 'react';
 import styled from 'styled-components';
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 const Form = () => {
     
@@ -60,26 +61,31 @@ const ContainerData = styled.div`
       }
 `
 
-  const handleSubmit = (e) => {
-    alert("su consulta ah sido enviada")
-    console.log(e.target)
-    e.preventDefault();
-    
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    emailjs.sendForm('service_ssrjdd9', 'template_kzcfzsa', form.current, 'd5OI5cQoE-5ByMdL3')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
   };
+  
 
   return (
     <Section>
-    <FormContainer onSubmit={handleSubmit}>
+    <FormContainer ref={form} onSubmit={sendEmail}>
         <ContainerData>
         <FormGroup>
-        <Input placeholder="Nombre" type="text" id="name" />
+        <Input placeholder="Nombre" type="text" id="name" name="user_name"/>
       </FormGroup>
       <FormGroup>
-        <Input placeholder="Correo" type="email" id="email" />
+        <Input placeholder="Correo" type="email" id="email" name="user_email"/>
       </FormGroup>
         </ContainerData>
       <FormGroup>
-        <TextArea placeholder="Su consulta" id="message" />
+        <TextArea placeholder="Su consulta" id="message" name="message"/>
       </FormGroup>
       <Button type="submit">Enviar</Button>
     </FormContainer>
