@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import swal from 'sweetalert';
 
 const Form = () => {
     
@@ -64,15 +65,23 @@ const ContainerData = styled.div`
   const form = useRef();
 
   const sendEmail = (e) => {
+    e.preventDefault();
     emailjs.sendForm('service_ssrjdd9', 'template_kzcfzsa', form.current, 'd5OI5cQoE-5ByMdL3')
       .then((result) => {
-          console.log(result.text);
+        swal({
+            title: "Gracias por enviarnos su consulta",
+          })
+          form.current[0].value = ""
+          form.current[1].value = ""
+          form.current[2].value = ""
       }, (error) => {
-          console.log(error.text);
+        swal({
+            title: "Lo sentimos, no se ha podido enviar la consulta",
+            dangerMode: true,
+          })
       });
   };
   
-
   return (
     <Section>
     <FormContainer ref={form} onSubmit={sendEmail}>
