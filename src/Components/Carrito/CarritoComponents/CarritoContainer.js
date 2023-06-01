@@ -19,6 +19,10 @@ const CarritoContainer = () => {
     list-style: none;
     background: #D1C9CF;
     font-weight: 600;
+    @media (max-width: 600px) {
+      font-size: .65em;
+      padding: 10px;
+    }
   `
   const CarritoProduct = styled.li`
     flex: 3;

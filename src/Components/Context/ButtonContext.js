@@ -31,7 +31,7 @@ const ButtonContext = ({product}) => {
 
   return (
     <>
-      <Button onClick={handleClick}>Comprar</Button>
+      <Button onClick={handleClick}>Agregar al carrito</Button>
     </>
   );
 };
