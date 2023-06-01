@@ -20,6 +20,9 @@ const ProductosHome = () => {
   const Container = styled.div`
     width: 100%;
     display: flex;
+    @media (max-width: 759px) {
+      display: block;  
+    }
   `
   const ContainerFilter = styled.div`
     width: 20%;
@@ -28,6 +31,9 @@ const ProductosHome = () => {
     flex-direction: column;
     box-shadow: 5px 0px 5px #E5E2E5;
     background: #f5f5f5;
+    @media (max-width: 759px) {
+      width: 100%; 
+    }
   `
   const ContainerProducts = styled.div`
    width: 100%;
@@ -35,6 +41,7 @@ const ProductosHome = () => {
    flex-wrap: wrap;
    justify-content: space-evenly;
    padding: 20px;
+  
   `
   return (
     <Container>

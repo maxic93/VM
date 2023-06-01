@@ -6,9 +6,6 @@ import ButtonContext from '../../Context/ButtonContext'
 const ProductoHome = ({product}) => {
     const { img, name, precio, categoria  } = product
 
-    const handleClick = () => {
-      alert("Ahhh huevoo")
-    }
   
     const Container = styled.div`
     width: 360px;
@@ -37,7 +34,7 @@ const ProductoHome = ({product}) => {
   `
   
   return (
-    <Container onClick={handleClick}>
+    <Container>
         <div className='div-img'>
           <img className='img' src={img} alt="Almohada blanca"/>
         </div>  
