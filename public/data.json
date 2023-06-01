@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "categoria": "Almohada",
+        "name": "ByN",
+        "precio": 2500,
+        "img": "https://i.etsystatic.com/25094918/r/il/052ff9/3051900208/il_570xN.3051900208_jbtx.jpg"
+    },
+    {
+        "id": 2,
+        "categoria": "Almohada",
+        "name": "Con Frase",
+        "precio": 2500,
+        "img": "https://i.pinimg.com/originals/7f/2d/f1/7f2df1dd011e4507642899e613f25775.jpg"
+    },
+    {
+        "id": 3,
+        "categoria": "Almohada",
+        "name": "Azul",
+        "precio": 2500,
+        "img": "https://sodimac.scene7.com/is/image/SodimacPeru/2652773_01"
+    },
+    {
+        "id": 4,
+        "categoria": "Almohada",
+        "name": "Plumas",
+        "precio": 2500,
+        "img": "http://d3ugyf2ht6aenh.cloudfront.net/stores/001/640/819/products/almohadas_mesa-de-trabajo-1-copia-91-3054b72f900785258a16184148186739-640-0.webp"
+    },
+    {
+        "id": 5,
+        "categoria": "Almohada",
+        "name": "Gris",
+        "precio": 2500,
+        "img": "https://cannonhome.cl/media/catalog/product/f/u/fundaalm52x76lisogray_1.jpg"
+    },
+    {
+        "id": 6,
+        "categoria": "Almohada",
+        "name": "Blanca",
+        "precio": 2500,
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROnvH0Ajrul-FIRwE3hcCtJ99ksE4pt0nMADj8XzOcXZbrTsoRAajnF8UTVAEwEUiJZ0c&usqp=CAU"
+    }
+  ]

@@ -1,0 +1,31 @@
+.navbar {
+    padding: 0;
+    position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 200;
+}
+.navbar-toggler {
+    color: #f3f3f3;
+    background: #f3f3f3;
+}
+.nav {
+    background: #425c81;
+    padding: 20px;
+}
+.navbar-brand {
+    font-size: 2em;
+    color: #f3f3f3;
+}
+.fa-solid {
+    color: #f3f3f3;
+    font-size: 1.2em;
+}
+.nav-link {
+    color: #f3f3f3;
+}
+.dropdown-menu {
+    z-index: 500;
+    position: absolute;
+}
