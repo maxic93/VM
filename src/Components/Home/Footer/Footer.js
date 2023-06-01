@@ -43,8 +43,8 @@ const Footer = () => {
         </Div>
         <Div>
             <h2 className='social-red'>¡¡Seguinos!!</h2>
-            <a target="_blank" rel="noreferrer" href='https://www.instagram.com/maxicabral.93/'><i class="fa-brands fa-instagram icon"></i></a>
-            <a target="_blank" rel="noreferrer" href='https://www.instagram.com/maxicabral.93/'><i class="fa-brands fa-facebook icon"></i></a>
+            <a target="_blank" rel="noreferrer" href='https://www.instagram.com/decovm_/'><i class="fa-brands fa-instagram icon"></i></a>
+            <a target="_blank" rel="noreferrer" href='https://www.facebook.com/decovm.ar/'><i class="fa-brands fa-facebook icon"></i></a>
         </Div>
     </Container>
   )
