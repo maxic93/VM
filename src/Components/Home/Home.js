@@ -3,6 +3,8 @@ import Banner from './Banner/Banner'
 import Info from './Info/Info'
 import Nosotros from './Nosotros/Nosotros'
 import styled from 'styled-components'
+import Form from './Form/Form'
+
 
 
 const Home = () => {
@@ -15,6 +17,7 @@ const Home = () => {
       <Banner/>
       <Info/>
       <Nosotros/>
+      <Form/>
       </Section>  
   )
 }
